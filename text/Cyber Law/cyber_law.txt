@@ -1,0 +1,76 @@
+# Cyber Law
+
+## Note:
+Some of this section will contain information specific to South Africa and its constitution or cyber regulations,
+<br>
+But there is a lot of overlap with other countries that South Africa has allied with - like the US and Canada, New Zealand, etc.,
+<br>
+And many concepts - like the Constitution - will remain the same across those countries.
+<br>
+<br>
+I will either prefix lines that are specific to South Africa with "SA:" or prefix sections with the "SA" or "South Africa" identifiers
+
+
+## What is Cyber Law?
+"Cyber" is a term that originates from Ancient Greece, but was coined by Norbert Wiener in 1948 to refer to the theory and study of Communication or Control. 
+<br>
+It was later adapted (in the early 90's) to refer to computers, electronic communication, information technology, and (later) virtual reality.
+<br>
+<br>
+"Law" refers to a set of rules which a particular country or community recognizes as regulating the actions of its members and which it may enforce by the imposition of penalties.
+<br>
+<br>
+"Cyber Law" is therefore the rules and laws that we must obey when using computers for electronic communications of any kind, Information Technology, or Virtual Reality.
+<br>
+These laws govern how we may act when using computers or computer systems, and how we - as an organization - ultimately build our systems and manage user data.
+
+
+## Why is Cyber Law important?
+The easiest way to explain this is to have you introspect a little.
+<br>
+Would you feel comfortable if your Internet Service Provider made all of your search history public, or posted your private information on Social Media?
+<br>
+Would you feel safe if your Bank or Governmental Institution allowed anyone to log into their systems and find your home address?
+<br>
+<br>
+This highlights why Cyber Law is important, because we are all customers and users of different systems. 
+<br>
+Whether you're the CEO of Capitec Bank, Chase Bank, Amazon, Netflix or the President of the USA, you are still a user of other people's systems.
+<br>
+We all need some kind of guarantee that those systems are safe for us to use, and that our personal information won't be abused or used in ways that can endanger ourselves or our families.
+<br>
+Cyber Law - and the governing bodies that police those laws - is that guarantee! 
+<br>
+It's the only thing that really protects us from:
+<li>Rich Executives that would sell or abuse confidential and private user info to get an extra 1% on their Market Share</li>
+<li>Hackers that are actively trying to get our information for Identity Theft, kidnappings and other malicious activities</li>
+<li>Regular employees that inadvertently aid either of the 2x mentioned above, because they weren't aware of the implications it could have, or never received regulatory training</li>
+
+
+
+## Intro to Cyber Law (South Africa)
+The Constitution came into effect on February 4th 1997 and lists many laws, but is basically founded on the following core values:
+<ol>
+	<li>Human Dignity</Li>
+	<li>Universal Adult Suffrage</Li>
+	<li>Non-Racialism and Non-Sexism</Li>
+	<li>Supremacy of the Constitution and the Rule of Law</Li>
+</ol>
+
+Section 2 of the Constitution states that the Constitution is Supreme.
+<br>
+<i>Direct quote: "This constitution is the supreme law of the Republic; Law or conduct inconsistent with it is invalid, and the obligations by it must be fulfilled"</i>
+<br>
+Basically, this means that the Constitution is the most important source of Law in South Africa, and ALL other Laws must comply with the Constitution.
+<br>
+For example: If the constitution says "john is allowed to keep his home address private" and a new law states that "john is lawfully required to post his home address on the internet", the new law will be scrapped.
+<br>
+In cases where the law is invalid (like the new law in our basic example) the Constitutional Court (the guys who uphold our constitutional rights and ensure that laws don't infringe them) will then make the government fix it.
+<br>
+<br>
+South Africa is also a signatory to lots of international treaties, and as such, needs to also follow and implement the rules of those treaties/agreements.
+<br>
+The governing body will do so by implementing national legislation that complies to these requirements. 
+<br>
+This can be referred to as "Compliance", although compliance is a broad term.
+

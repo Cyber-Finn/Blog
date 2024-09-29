@@ -67,7 +67,16 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" >Cyber Law</a>
+                <div class="dropdown">
+                    <!-- name and type of the dropdown -->
+                    <!-- decided to use an onclick here, rather than a link to our page, for a truly responsive and dynamic page. We dont want to reload the entire page, only a part of it! -->
+                    <a href="#" onclick="updateBodyText('https://raw.githubusercontent.com/Cyber-Finn/Blog/main/text/Cyber%20Law/cyber_law.txt');">Cyber Law</a>
+                        <div class="dropdown-content">
+                            <!-- elements the dropdown contains -->
+                            <a href="#" onclick="updateBodyText('https://raw.githubusercontent.com/Cyber-Finn/Blog/main/text/Cyber%20Law/cyber_law.txt');">Intro</a>
+                        </div>
+                </div>
+
                 <a href="#" >Cyber Security</a>
                 <a href="#" >Database Engineering</a>
                 <a href="#" >Enterprise Systems Engineering</a>

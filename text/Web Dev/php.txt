@@ -160,13 +160,11 @@ This makes it do comparisons with data as-is, causing our example to be FALSE, b
 
 Another example is:
 ```PHP
-<? PHP
 	$a = "100";
 	$b = "+100";
 	
 	if($a == $b) echo "this is TRUE, because PHP turned both to numbers and 100 is the same as +100";
 	if($a === $b) echo "this is FALSE and the echo will never output, because we're comparing the strings as-is, and they do not match";
-?>
 ```
 
 ## Echo vs Print
@@ -437,7 +435,7 @@ There are Numeric and Associative arrays.
 <b>Associative arrays</b> are where we use words/keyword to store or access data.
 
 ## Array Functions
-### inserting into Numeric Arrays:
+## inserting into Numeric Arrays:
 ```PHP
 	$arr[] = "hello";
 	$arr[] = "world!";
@@ -450,14 +448,14 @@ We could also have specified the exact locations to insert into like this:
 	$arr[1] = "world!";
 ```
 <br>
-### Getting items from a numeric array:
+## Getting items from a numeric array:
 ```PHP
 	$arr[] = "hello";
 	$arr[] = "world!";
 
 	echo $arr[0] . " " . $arr[1]; //echo "hello world!"
 ```
-### Associative arrays:
+## Associative arrays:
 These are basically maps, or Key-value-pairs.
 <br>
 We can store and access data using "tags", like so:
@@ -471,13 +469,13 @@ We can store and access data using "tags", like so:
 ```
 These types of Arrays are super useful when we're extracting info from HTML or XML, because those datatypes may be presented to our code in Key-value-pairs.
 
-### Creating Numeric Arrays with the Array keyword:
+## Creating Numeric Arrays with the Array keyword:
 ```PHP
 $arr = array("hello", "world!"); //this tells PHP to create a new numeric array and add these items
 ```
 retrieving items will still be the same as with regular Numeric Arrays
 
-### Creating Associative Arrays with the Array keyword:
+## Creating Associative Arrays with the Array keyword:
 ```PHP
 	$arr = array("first" => "hello", 
 		     "second" =>"world!");
@@ -564,8 +562,8 @@ Accessing this data is the same as a regular numeric array, but requires 2x for 
 			<li>Syntax: </li>
 			<li>$arr = explode(" ", "hello world from CyberFinn!") //this would create 4x array elements. It does so by splitting the string into separate strings based on the instruction (I said " " - which is blank space)</li>
 		</ul>
-	</li>Count: 
-	<li>
+	</li>
+	<li>Count: 
 		<ul>
 			<li>Counts the elements in the array for you</li>
 		</ul>
@@ -612,7 +610,6 @@ Accessing this data is the same as a regular numeric array, but requires 2x for 
 </ol>
 
 ## Accessing files on Disk
-<br>
 Note about the Die command: it terminates the current script's execution and closes all resources. 
 <br>
 This will close any open files, etc. that you're using in your script, but closes the entire app too
@@ -622,16 +619,16 @@ Sometimes, you may not want to access the db, like when you're handling profile 
 <br>
 This is where file handling comes in
 
-### File Disk operations:
+## File Disk operations:
 
 <ol>
 	<li>Checking files exist:
-		<ol>
+		<ul>
 			<li>use the "file_exists" method (returns bool)</li>
-		</ol>
+		</ul>
 	</li>
 	<li>creating files:
-		<ol>
+		<ul>
 			<li>note: some systems are case sensitive, so always create files with lower-case names</li>
 			<li>
 example: 
@@ -645,54 +642,54 @@ example:
 	echo "success";
 ```
 			</li>
-		</ol>
+		</ul>
 	</li>
 	<li>reading files:
-		<ol>
+		<ul>
 			<li>note: easiest way is to read it into a single string, we do this with fgets (file-get-string)</li>
 			<li>note: when calculating the number of chars to read, remember to count newline chars too!</li>
 			<li>using the same function as above, but replacing the fwrite with the following line - and opening the file in "r" mode:</li>
 ```PHP
 $fileData = fgets($fileHandle, $numberOfCharactersToRead);
 ```
-		</ol>
+		</ul>
 	</li>
 	<li>Reading an entire file without handles:
-		<ol>
+		<ul>
 			<li>we can use the simple get_file_contents method</li>
 			<li>note: this is super useful, because it works over the internet! which fopen doesn't. So we can use it to get HTML, etc from anywhere else, or locally</li>
 ```PHP
 $fileContents = get_file_contents($filenameAndPath);
 ```
-		</ol>
+		</ul>
 	</li>
 	<li>copying files: 
-		<ol>
+		<ul>
 			<li>note: copy returns a Boolean true if successful, false if failed</li>
 ```PHP
 	copy($sourceFilePathAndName, $destinationFilePathAndName);
 ```
-		</ol>
+		</ul>
 	</li>
 	<li>moving files:
-		<ol>
+		<ul>
 			<li>note: to move a file, we need to use the "rename" function</li>
 			<li>note: you can use "rename" on directories too</li>
 ```PHP
 	rename($sourceFilePathAndName, $destinationFilePathAndName);
 ```
-		</ol>
+		</ul>
 	</li>
 	<li>deleting files:
-		<ol>
+		<ul>
 			<li>note: to delete files, we use "unlink" which removes it from the filesystem</li>
 ```PHP
 unlink($filename);
 ```
-		</ol>
+		</ul>
 	</li>
 	<li>File pointers and reading/writing from specific locations:
-		<ol>
+		<ul>
 			<li>File pointers are the index at which the next file operation (read or write) will take place</li>
 			<li>File pointers are not the same as the file handle</li>
 			<li>we use the "fseek" method to do move the file pointer</li>
@@ -708,10 +705,10 @@ fseek($fileHandle, 10, SEEK_SET); //set file pointer to position 10
 ```PHP
 fseek($fileHandle, 10, SEEK_CURR); //set filepointer to current location + 10 char
 ```
-		</ol>
+		</ul>
 	</li>
 	<li>Locking files:
-		<ol>
+		<ul>
 			<li>This is needed for when multiple users are trying to write to the same file simultaneously, so that the file doesn't get corrupted</li>
 			<li>we use the "flock" function (it means "file lock")</li>
 			<li>we need to use the following params: LOCK_EX (to lock the file) and LOCK_UN (to unlock the file again)</li>
@@ -721,10 +718,10 @@ fseek($fileHandle, 10, SEEK_CURR); //set filepointer to current location + 10 ch
 flock($fileHandle, LOCK_EX); //lock the file
 flock($fileHandle, LOCK_UN); //unlock the file
 ```
-		</ol>
+		</ul>
 	</li>
 	<li>uploading files from a web browser
-		<ol>
+		<ul>
 			<li>seems daunting, but is super easy</li>
 			<li>requires some HTML, and specifically the form tag's encoding type of "multipart/form-data"</li>
 			<li>note: we don't have to worry about deleting the temp files that get stored on the server, PHP does this for us when we eventually exit</li>
@@ -745,7 +742,7 @@ if($_FILES) //all uploaded files are always stored into this PHP-default associa
 ```
 			<li>note: On the PHP-side, there are 5x things stored into the $_FILES array, which can only be accessed via the key ["filename"], these are: name, size (in bytes), tempName, error from uploading (if any), type (Internet Media Type -> they have specific names, but represent images, audio, etc.)</li>
 			<li>this means that we actually have a few filtering options to defend against zip bombs, etc. and ensure that only the right types are uploaded</li>
-		</ol>
+		</ul>
 	</li>
 </ol>
 
@@ -770,7 +767,7 @@ HTML5 is a lot less strict, but has all the important functionality of XHTML and
 It's also a lot simpler to use - and most browsers nowadays (since 2011) use it
 
 
-### Some notes on MySQL
+## Some notes on MySQL
 You should've ideally studied some Database Engineering before working with databases at all, but if you have worked with databases before, or you're a chatGPT expert, it should be pretty easy to use.
 <br>
 Most databases are pretty easy to use and support the same types of DML queries - despite few syntactical differences
